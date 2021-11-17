@@ -32,7 +32,7 @@ jobs:
     - name: Terraform Validate
       run: terraform validate
     - name: Terraform Plan
-      run: terraform plan -auto-approve -var-file="fixtures.tfvars"
+      run: terraform plan -var-file="fixtures.tfvars"
     # - name: Terraform Apply
     #   run: terraform apply -auto-approve -var-file="fixtures.tfvars"
     # - name: Terraform Destroy
