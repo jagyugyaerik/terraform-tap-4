@@ -32,6 +32,6 @@ jobs:
     - name: Terraform Validate
       run: terraform validate
     - name: Terraform Apply
-      run: terraform apply -auto-approve
+      run: terraform apply -auto-approve -var-file="fixtures.tfvars"
     - name: Terraform Destroy
-      run: terraform destroy -auto-approve
+      run: terraform destroy -auto-approve -var-file="fixtures.tfvars"
