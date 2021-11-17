@@ -1,5 +1,5 @@
 variable "region" {
-    type = string
+  type = string
 }
 
 provider "aws" {
@@ -7,7 +7,7 @@ provider "aws" {
 }
 
 module "vpc" {
-    source = "./../../_modules/vpc"
+  source = "./../../_modules/vpc"
 
-    cidr_block = "10.0.0.0/24"
+  cidr_block = "10.0.0.0/24"
 }
